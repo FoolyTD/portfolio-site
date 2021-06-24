@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Travis Cariaga Portfolio</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/7313f96015.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><i class="fab fa-connectdevelop"></i></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Travis Cariaga</h1>
+            <p>World's Greatest Programmer</p>
+            <a class="hero-btn" href="#contact">Buy Me A Coffee <i class="fas fa-coffee"></i></a>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+        <h1>About Me</h1>
+        <div class="about-text">
+            <p>
+            I love web development! Since beginning my journey of learning
+            software engineering, I have built many projects that demonstrate
+            my knowledge of Javascript, HTML, CSS, Bootstrap, DJANGO, Python,
+            Unreal Engine 4, and more! Here is a link to my GitHub portfolio
+            containing my live projects.
+          </p>
+          <p>
+            As a student in the Thinkful program, I have come to value pair
+            programming working with other like-minded engineers to build
+            interactive software for the users!
+          </p>
+          <p>
+            When I am not problem-solving on a computer, I'm exploring the
+            world with my wife and daughter! We love the beach, hiking,
+            growing food, and living our best life every day!
+          </p>
+          <p>
+            Check out my featured projects on this website and if you want to
+            work together please submit a contact form so we can connect!
+          </p>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <h1>Projects</h1>
+        <div class="row">
+            <div class="projects-col">
+                <img src="images/games.jpg">
+                <div class="layer">
+                    <a href="https://github.com/FoolyTD" rel="noopener noreferrer" target="_blank"><h3>Games</h3></a>
+                </div>
+            </div>
+            <div class="projects-col">
+                <img src="images/inspiring.jpg">
+                <div class="layer">
+                    <a href="https://github.com/FoolyTD" rel="noopener noreferrer" target="_blank"><h3>Websites</h3></a>
+                </div>
+            </div>
+            <div class="projects-col">
+                <img src="images/applications.jpg">
+                <div class="layer">
+                    <a href="https://github.com/FoolyTD" rel="noopener noreferrer" target="_blank"><h3>Applications</h3></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+    <h1>Contact</h1>
+        <div class="container">
+            <form class="form" action="https://formspree.io/f/mzbkqnyz" method="post">
+                <div class="form-control">
+                <label for="user-name">Name</label><input id="user-name" name="name" type="text" placeholder="Barack Obama">
+                <label for="user-email">Email</label><input id="user-email" type="text" name="email" placeholder="barackobama@gmail.com">
+                <label for="user-message">Message</label><input id="user-message" name="message" type="text" class="textarea" placeholder="Say something . . .">
+                <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+
+    <div class="icons">
+        <a href="https://www.linkedin.com/in/travis-cariaga/" rel="noopener noreferrer" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href = "mailto:trcariaga@utexas.edu"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/FoolyTD" rel="noopener noreferrer" target="_blank"><i class="fab fa-github-square"></i></a>
+    </div>
+</section>
+
+    <!-- Javascript for toggle menu -->
+    <script>
+        const navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "500px";
+
+        }
+
+    </script>
+</body>
+
+</html>
